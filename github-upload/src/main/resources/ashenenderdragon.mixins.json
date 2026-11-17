@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "package": "com.ashenenderdragon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EnderDragonPhaseManagerMixin",
+    "EnderDragonGroundCollisionMixin",
+    "DragonSittingScanningPhaseMixin",
+    "EntityPassengerPositionMixin",
+    "EntityPushMixin",
+    "ShieldDecorationRecipeMixin"
+  ],
+  "client": [
+    "client.EnderDragonModelMixin",
+    "client.EnderDragonRendererMixin",
+    "client.MinecraftSoundMixin",
+    "client.MusicManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
